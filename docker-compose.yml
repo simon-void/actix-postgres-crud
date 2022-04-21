@@ -3,4 +3,4 @@ services:
   server-app:
     build: .        # look in current directory after Dockerfile
     ports:
-      - "8080:8080"  # local port to container port
+      - "8081:8081"  # local port to container port

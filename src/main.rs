@@ -2,7 +2,7 @@ use actix_web::{get, post, App, HttpResponse, HttpServer, Responder};
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
-    let port = 8080;
+    let port = 8081;
     println!("starting server on port {}", port);
     HttpServer::new(|| {
         App::new()

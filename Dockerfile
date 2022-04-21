@@ -1,4 +1,6 @@
-FROM ubuntu
+FROM ubuntu:20.04
+
+RUN apt-get update; apt-get install curl -y
 
 # any following command is executed relative to this path
 WORKDIR /app
@@ -9,4 +11,5 @@ WORKDIR /app
 COPY ./target/release/actix-postgres-crud ./
 
 # Start command
+EXPOSE 8081
 CMD ["./actix-postgres-crud"]
